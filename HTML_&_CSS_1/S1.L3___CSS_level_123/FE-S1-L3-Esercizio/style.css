@@ -57,9 +57,7 @@ body{
 }
 
 
-.section_1{
-    border-bottom: 0.2px solid rgb(197, 243, 243);
-}
+
 
 .focaccia, .topping{
     text-align: start;
@@ -74,19 +72,49 @@ ul{
     text-align: initial;
 }
 
+
+/* INGREDIENTS */
 .section_1 p{
     font-size: x-large;
     padding-top: 35px;
     text-align: start;
 }
 
+.section_1{
+    border-bottom: 0.2px solid rgb(197, 243, 243);
+}
 
+/* METHOD */
+.section_2 p{
+    font-size: x-large;
+    padding-top: 35px;
+    text-align: start;
+}
+
+.section_2{
+    border-bottom: 0.2px solid rgb(197, 243, 243);
+}
+
+section ol li p{
+    text-align: start;
+    font-size: medium;
+}
 
 
 
 
 
 /* FOOTER */
+
+.footer{
+    width: 50%;
+    margin: auto;
+}
+
+
+.footer p{
+    text-align: start;
+}
 
 .link{
     color: rgb(1, 203, 203);

@@ -63,3 +63,19 @@
 /* ELEMENTI NELL' ASIDE */
 
 /* FOOTER */
+.footer{
+    background:linear-gradient(rgb(0, 123, 154), rgb(3, 83, 101));
+    background-size: 50px auto;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    margin: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);;
+}
+
+.footer a{
+    color: rgb(215, 0, 205);
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+}
