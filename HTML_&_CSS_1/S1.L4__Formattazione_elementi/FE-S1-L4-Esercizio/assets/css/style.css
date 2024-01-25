@@ -1,6 +1,6 @@
 /* IMPOSTAZIONI GENERALI */
 .body{
-    background-image: url(/assets/img/sfondo.png);
+    background-image: url(../img/sfondo.png);
     background-repeat: repeat;
     background-size: 70% auto;
     font-family: 'Poppins', sans-serif;
