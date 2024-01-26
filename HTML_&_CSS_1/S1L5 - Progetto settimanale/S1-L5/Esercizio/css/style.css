@@ -67,7 +67,78 @@ header .intestation_text .text button{
 
 /* MAIN */
 
+
 /* SECTION_1 */
+
+.section_1 .primo_paragrafo h3{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.section_1 .primo_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.section_1 .secondo_paragrafo h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section_1 .secondo_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.circle_pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section_1 .terzo_paragrafo h3{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.section_1 .terzo_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.section_1 .quarto_paragrafo h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section_1 .quarto_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+
+
 
 /* ASIDE */
 
