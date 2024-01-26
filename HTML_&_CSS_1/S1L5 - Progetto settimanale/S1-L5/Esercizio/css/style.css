@@ -132,7 +132,7 @@ header .intestation_text .text button{
 
 .section_1 .quarto_paragrafo p{
     margin-top: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     padding-left: 85px;
     padding-right: 85px;
 }
@@ -148,6 +148,7 @@ header .intestation_text .text button{
     color: white;
     padding-top: 20px;
     padding-bottom: 15px;
+    
 }
 
 .aside h3{
@@ -165,5 +166,16 @@ header .intestation_text .text button{
 }
 
 /* SECTION_2 */
+
+.primo_riquadro{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    border: 2px solid #dee1e3;
+}
+
+
 
 /* FOOTER */
