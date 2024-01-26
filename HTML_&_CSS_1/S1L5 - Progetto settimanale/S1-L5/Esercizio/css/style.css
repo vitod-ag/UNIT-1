@@ -1,0 +1,76 @@
+
+/* BODY (STYLESHEET GENERALE) */
+body{
+    text-align: center;
+    margin: 0;
+    color: #393d41; 
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    
+}
+
+/* HEADER */
+
+
+header .logo{
+    background-color: black;
+    
+}
+
+img{
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+header .intestation_text{
+    background-image: url(../images/banner.jpg);
+    background-position-x: center;
+    background-size: 130%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+header .intestation_text h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-top: 0;
+    
+}
+
+header .intestation_text .text{
+    display: inline-block;
+    text-align: center;
+    padding: 45px 115px 17px 115px;
+    font-size: medium;
+    
+}
+
+header .intestation_text .text button{
+    background-color: #f04c2f;
+    background-size: 50px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+/* MAIN */
+
+/* SECTION_1 */
+
+/* ASIDE */
+
+/* SECTION_2 */
+
+/* FOOTER */
