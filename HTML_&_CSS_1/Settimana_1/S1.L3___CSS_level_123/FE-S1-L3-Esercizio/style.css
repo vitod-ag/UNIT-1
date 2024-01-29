@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* HEADER */
+
+.header img{
+    width: 200px;
+    margin: 1rem 0;
+}
+
+.header p{
+    background-color:  lightyellow;
+    padding: 12px;
+    border-top: 2px solid yellow;
+    color: rgb(14, 75, 55);
+}
+
+/* MAIN */
+
+.main{
+    width: 50%;
+    margin: auto;
+}
+
+.main h1{
+    padding-top: 7%;
+}
+
+.primo_paragrafo{
+    padding-top: 10px;
+    text-align: initial;
+}
+
+.main video{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 4px 1px 15px 5px #000000;
+}
+
+.secondo_paragrafo{
+    text-align: center;
+    color: gray;
+}
+
+.main aside h4{
+    margin-bottom: 0;
+    color: crimson;
+}
+
+.main aside{
+    text-align: start;
+    border-left: 3px solid yellow;
+    padding-left: 2%;
+}
+
+
+
+
+.focaccia, .topping{
+    text-align: start;
+    margin-top: 35px;
+}
+
+li{
+    margin-bottom: 1rem;
+}
+
+ul{
+    text-align: initial;
+}
+
+
+/* INGREDIENTS */
+.section_1 p{
+    font-size: x-large;
+    padding-top: 35px;
+    text-align: start;
+}
+
+.section_1{
+    border-bottom: 0.2px solid rgb(197, 243, 243);
+}
+
+/* METHOD */
+.section_2 p{
+    font-size: x-large;
+    padding-top: 35px;
+    text-align: start;
+}
+
+.section_2{
+    border-bottom: 0.2px solid rgb(197, 243, 243);
+}
+
+section ol li p{
+    text-align: start;
+    font-size: medium;
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer{
+    width: 50%;
+    margin: auto;
+}
+
+
+.footer p{
+    text-align: start;
+}
+
+.link{
+    color: rgb(1, 203, 203);
+}

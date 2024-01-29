@@ -1,0 +1,182 @@
+
+/* BODY (STYLESHEET GENERALE) */
+body{
+    text-align: center;
+    margin: 0;
+    
+    color: #393d41; 
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+    
+}
+
+/* HEADER */
+
+
+header .logo{
+    background-color: black;
+
+}
+
+img{
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+header .intestation_text{
+    background-image: url(../images/banner.jpg);
+    background-position-x: center;
+    background-size: 130%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    margin-top: 0;
+}
+
+header .intestation_text h1{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    margin-top: 0;
+    
+}
+
+header .intestation_text .text{
+    display: inline-block;
+    text-align: center;
+    padding: 45px 115px 17px 115px;
+    font-size: medium;
+    
+}
+
+header .intestation_text .text button{
+    background-color: #f04c2f;
+    background-size: 50px;
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+
+
+/* MAIN */
+
+
+/* SECTION_1 */
+
+.section_1 .primo_paragrafo h3{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.section_1 .primo_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.section_1 .secondo_paragrafo h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section_1 .secondo_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.circle_pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section_1 .terzo_paragrafo h3{
+    margin-top: 50px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.section_1 .terzo_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+}
+
+.section_1 .quarto_paragrafo h3{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section_1 .quarto_paragrafo p{
+    margin-top: 5px;
+    margin-bottom: 45px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+
+
+
+/* ASIDE */
+
+.aside{
+    background-color: #ff4423;
+    background-size: 100px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    
+}
+
+.aside h3{
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aside .mario_rossi{
+    margin-bottom: 1px;
+}
+
+.aside .ceo{
+    margin-top: 1px;
+    font-size: small;
+}
+
+/* SECTION_2 */
+
+.primo_riquadro{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    border: 2px solid #dee1e3;
+}
+
+
+
+/* FOOTER */

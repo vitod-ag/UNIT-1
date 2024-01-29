@@ -1,0 +1,81 @@
+/* IMPOSTAZIONI GENERALI */
+.body{
+    background-image: url(../img/sfondo.png);
+    background-repeat: repeat;
+    background-size: 70% auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+.header{
+    background:linear-gradient(rgba(0,160,198,1), rgba(3,109,134,1));
+    text-align: center;
+    box-shadow: 0px 8px 10px black;
+    padding-bottom: 25px;
+    margin: 15px;
+}
+
+.text_header, a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.nav ul{
+    list-style: none;
+}
+
+.nav ul li a:hover{
+    color: red;
+}
+
+.nav ul li a:before{
+    content: "\22c6\0020";
+    color: white;
+}
+
+
+.logo{
+    padding: 32px 0px;
+}
+
+
+/* MAIN */
+
+.main{
+    background-color: white;
+    margin: 15px;
+    box-shadow: 8px 0px 0.5px -5px rgb(92, 90, 90), -6px 0px 2px -5px rgb(92, 90, 90);
+    padding-left: 15px;
+    padding-top: 25px;
+}
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+
+/* TABELLE */
+
+/* FORM */
+
+/* ELEMENTI NELL' ASIDE */
+
+/* FOOTER */
+.footer{
+    background:linear-gradient(rgb(0, 123, 154), rgb(3, 83, 101));
+    background-size: 50px auto;
+    text-align: center;
+    padding: 25px;
+    color: white;
+    margin: 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);;
+}
+
+.footer a{
+    color: rgb(215, 0, 205);
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+    text-transform: lowercase;
+}
