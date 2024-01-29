@@ -97,6 +97,6 @@ console.log(!(name1===name2));
 
 //EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 
-name1=name1.toLowerCase();
+
 name2=name2.toLowerCase();
 console.log(name1===name2);
