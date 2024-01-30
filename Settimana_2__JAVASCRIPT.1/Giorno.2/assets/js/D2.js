@@ -9,8 +9,10 @@ let numero2 = 25;
 
 if(numero1>numero2){
   document.getElementById('max').innerHTML='Il numero più grande tra i due è ' + numero1;
-}else{
+}else if(numero2>numero1){
   document.getElementById('max').innerHTML='Il numero più grande tra i due è ' + numero2;
+}else{
+  document.getElementById('max').innerHTML= numero1 + ' e' + numero2 + ' sono uguali';
 }
 
 /* ESERCIZIO 2
@@ -39,7 +41,7 @@ if(!(numero3===5)){
 let numero4 = 27;
 let divisibile = false;
 
-if((numero4 %5==0)){
+if((numero4 %5===0)){
   divisibile=true;
   console.log(divisibile);
   document.getElementById('divisibile').innerHTML= 'Il ' + numero4 + ' è divisibile per 5';
@@ -124,10 +126,10 @@ if(totalShoppingCart1>50){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let numbers = [99,21,5];
-numbers.sort();
-console.log(numbers);
-document.getElementById('sort').innerHTML= numbers;
+let num1=2;
+let num2=7;
+let nume3=5;
+
 
  
 
