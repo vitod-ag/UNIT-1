@@ -102,7 +102,7 @@ if(totalShoppingCart>50){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart1 = 84;
+let totalShoppingCart1 = 100;
 let spedizione1 = 10;
 
 if(totalShoppingCart1>50){
@@ -125,9 +125,9 @@ if(totalShoppingCart1>50){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num1=2;
-let num2=7;
-let num3=5;
+let num1=9;
+let num2=3;
+let num3=14;
 
 if((num1>=num2)&&(num1>=num3)){
     if(num2>=num3){
@@ -137,12 +137,12 @@ if((num1>=num2)&&(num1>=num3)){
     }
 }else if((num2>=num1)&&(num2>=num3)){
       if(num3>=num1){
-        console.log(num2,num1,num3);
+        console.log(num2,num3,num1);
       }else{
-        console.log(num2,num3.num1);
+        console.log(num2,num1.num3);
       }
 }else if((num3>=num1)&&(num3>=num2)){
-      if (num1>=num3){
+      if (num1>=num2){
         console.log(num3,num1,num2);
       }else{
         console.log(num3,num2,num1);
@@ -150,10 +150,6 @@ if((num1>=num2)&&(num1>=num3)){
 }
 
 
-
-
-
- 
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
@@ -203,13 +199,15 @@ if(numero7%2==0){
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let val = 7
-if (val < 10) {
-    console.log("Meno di 10");
-  } else if (val < 5) {
+if (val < 5) {
     console.log("Meno di 5");
+  } else if (val < 10) {
+    console.log("Meno di 10");
   } else {
     console.log("Uguale a 10 o maggiore");
   }
+
+
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -263,7 +261,7 @@ array[7]=8;
 array[8]=9;
 array[9]=10;
 console.log(array);
-//document.getElementById('array')=array;
+document.getElementById('array').innerHTML = array;
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
@@ -273,3 +271,4 @@ console.log(array);
 
 array[9]=100;
 console.log(array);
+document.getElementById('array_2').innerHTML = array;
