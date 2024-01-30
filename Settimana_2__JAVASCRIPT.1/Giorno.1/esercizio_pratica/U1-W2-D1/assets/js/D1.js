@@ -13,15 +13,15 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let persona= "Mauro";  // 1.tipo di dato --> stringa 
-console.log(persona);  // con le virgolette(singole o doppie), assegniamo ad una variabile un insieme o una combinazione di testo che sia numerico o caratteri
+let name= "Mauro";  // 1.tipo di dato --> stringa 
+document.getElementById('persona').innerHTML=name;  // con le virgolette(singole o doppie), assegniamo ad una variabile un insieme o una combinazione di testo che sia numerico o caratteri
 
 let number=10; // 2.tipo di dato --> number
 let float=1.6; // con il tipo number dichiariamo una variabile che sia un numero: assegnandoci float otteniamo un numero decimale
 let int=12;    // assegniandoci int li diamo un numero intero(anche negativo quindi)
-console.log(number);
-console.log(float);
-console.log(int);
+document.getElementById('number').innerHTML=number;
+document.getElementById('float').innerHTML=float;
+document.getElementById('int').innerHTML=int;
 
 let bool1=true;   // 3.tipo di dato --> boolean
 let bool2=false;  // un tipo di dato booleano che in poche parole può avere il valore di true(1) oppure false(0)
@@ -41,7 +41,7 @@ console.log(indefinito);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const myName="Vito";
-console.log(myName);
+document.getElementById('myName').innerHTML=myName;
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.

@@ -92,24 +92,26 @@ body .header .intestation_text .pulse a{
 .main .blocco_epicode{
     background-color: #db2f11;
     color: white;
+}
+
+.main .blocco_epicode h2{
+    padding-top: 35px;
+    margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
-
+    font-size: 38px;
 }
 
-.main .blocco_epicode blockquote h2{
-    padding-top: 50px;
-    padding-bottom: 10px;
-    margin-bottom: 0;
-    
-    font-weight: bolder;
-    font-size: 39px;
-}
-
-.main .blocco_epicode blockquote p{
+.main .blocco_epicode figure blockquote{
     font-style: italic;
     font-size: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 5px 0px 5px 0px;
+    padding-bottom: 20px;
+
+}
+
+.main .blocco_epicode figure figcaption{
+    padding-bottom: 20px;
+    line-height: 1.5;
 }
 
 
