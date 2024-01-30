@@ -128,7 +128,10 @@ if(totalShoppingCart1>50){
 
 let num1=2;
 let num2=7;
-let nume3=5;
+let num3=5;
+
+
+
 
 
  
