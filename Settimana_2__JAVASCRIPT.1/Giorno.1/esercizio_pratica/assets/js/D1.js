@@ -13,8 +13,8 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let name= "Mauro";  // 1.tipo di dato --> stringa 
-document.getElementById('persona').innerHTML=name;  // con le virgolette(singole o doppie), assegniamo ad una variabile un insieme o una combinazione di testo che sia numerico o caratteri
+let persona= "Mauro";  // 1.tipo di dato --> stringa 
+document.getElementById("persona").innerHTML = persona;  // con le virgolette(singole o doppie), assegniamo ad una variabile un insieme o una combinazione di testo che sia numerico o caratteri
 
 let number=10; // 2.tipo di dato --> number
 let float=1.6; // con il tipo number dichiariamo una variabile che sia un numero: assegnandoci float otteniamo un numero decimale
