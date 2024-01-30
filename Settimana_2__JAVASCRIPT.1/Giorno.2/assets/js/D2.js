@@ -4,8 +4,8 @@
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let numero1 = 12;
-let numero2 = 25;
+let numero1 = 26;
+let numero2 = 27;
 
 if(numero1>numero2){
   document.getElementById('max').innerHTML='Il numero più grande tra i due è ' + numero1;
@@ -16,12 +16,13 @@ if(numero1>numero2){
 }
 
 /* ESERCIZIO 2
-  Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
+  Scrivi un algoritmo che mostri "not equal" in console
+   se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let numero3 = 7;
+let numero3 = 6;
 
 if(!(numero3===5)){
   console.log('not equal');
@@ -32,13 +33,14 @@ if(!(numero3===5)){
 }
 
 /* ESERCIZIO 3
-  Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5
+  Scrivi un algoritmo che mostri "divisibile per 5" in console
+   se un numero fornito è perfettamente divisibile per 5
    (suggerimento: usa l'operatore modulo)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let numero4 = 27;
+let numero4 = 30;
 let divisibile = false;
 
 if((numero4 %5===0)){
@@ -51,14 +53,15 @@ if((numero4 %5===0)){
 }
 
 /* ESERCIZIO 4
-  Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8
+  Scrivi un algoritmo per verificare che, 
+  dati due numeri interi, il valore di uno di essi sia 8
    oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let numero5 = 10;
-let numero6 = 2;
+let numero5 = 14;
+let numero6 = 22;
 let otto = false;
 
 if(((numero5===8)||(numero6===8)||((numero5+numero6)===8)||(numero5-numero6)===8)||(numero6-numero5===8)){
@@ -79,16 +82,14 @@ if(((numero5===8)||(numero6===8)||((numero5+numero6)===8)||(numero5-numero6)===8
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart = 49;
-let spedizione_gratuita = false;
+let totalShoppingCart = 40;
+let spedizione = 10;
 
 if(totalShoppingCart>50){
-  spedizione_gratuita=true;
   console.log(totalShoppingCart);
   document.getElementById('e-commerce').innerHTML= 'Il cliente deve pagare ' + totalShoppingCart;
 }else{
-  spedizione_gratuita=false;
-  totalShoppingCart= totalShoppingCart+10;
+  totalShoppingCart= totalShoppingCart+spedizione;
   console.log(totalShoppingCart);
   document.getElementById('e-commerce').innerHTML= 'Il cliente deve pagare ' + totalShoppingCart;
 }
@@ -101,17 +102,15 @@ if(totalShoppingCart>50){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let totalShoppingCart1 = 56;
-let spedizione_gratuita1 = false;
+let totalShoppingCart1 = 84;
+let spedizione1 = 10;
 
 if(totalShoppingCart1>50){
-  spedizione_gratuita=true;
   totalShoppingCart1=(totalShoppingCart1-(totalShoppingCart1*20)/100);
   console.log(totalShoppingCart1);
   document.getElementById('Black_Friday').innerHTML= 'Il cliente deve pagare ' + totalShoppingCart1;
 }else{
-  spedizione_gratuita=false;
-  totalShoppingCart1= totalShoppingCart1+10;
+  totalShoppingCart1= totalShoppingCart1+spedizione1;
   totalShoppingCart1=(totalShoppingCart1-(totalShoppingCart1*20)/100);
   console.log(totalShoppingCart1);
   document.getElementById('Black_Friday').innerHTML= 'Il cliente deve pagare ' + totalShoppingCart1;
@@ -129,6 +128,26 @@ if(totalShoppingCart1>50){
 let num1=2;
 let num2=7;
 let num3=5;
+
+if((num1>=num2)&&(num1>=num3)){
+    if(num2>=num3){
+      console.log(num1,num2,num3);
+    }else{
+      console.log(num1,num3,num2);
+    }
+}else if((num2>=num1)&&(num2>=num3)){
+      if(num3>=num1){
+        console.log(num2,num1,num3);
+      }else{
+        console.log(num2,num3.num1);
+      }
+}else if((num3>=num1)&&(num3>=num2)){
+      if (num1>=num3){
+        console.log(num3,num1,num2);
+      }else{
+        console.log(num3,num2,num1);
+      }
+}
 
 
 
@@ -154,7 +173,8 @@ if(typeof valore_fornito=='number'){
 }
 
 /* ESERCIZIO 9
-  Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
+  Crea un algoritmo per controllare se un numero fornito sia pari o dispari 
+  (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
@@ -183,14 +203,13 @@ if(numero7%2==0){
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-      document.getElementById('circostanza').innerHTML= val + ' è meno di dieci';
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
+if (val < 10) {
+    console.log("Meno di 10");
+  } else if (val < 5) {
+    console.log("Meno di 5");
+  } else {
+    console.log("Uguale a 10 o maggiore");
+  }
 
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
@@ -204,11 +223,18 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+me.city="Toronto";
+console.log(me.city);
+
+
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+delete me.lastName;
+console.log(me.lastName);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -216,14 +242,34 @@ const me = {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+delete me.skills[2];
+console.log(me.skills[2]);
+
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let array=[];
+array[0]=1;
+array[1]=2;
+array[2]=3;
+array[3]=4;
+array[4]=5;
+array[5]=6;
+array[6]=7;
+array[7]=8;
+array[8]=9;
+array[9]=10;
+console.log(array);
+//document.getElementById('array')=array;
+
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+array[9]=100;
+console.log(array);
