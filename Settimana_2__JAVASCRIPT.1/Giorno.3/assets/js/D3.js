@@ -268,7 +268,7 @@ console.log("\n");
 console.log(charactersNames.length);
 for (let i = 0; i < charactersNames.length; i++) {
   for (let j = 0; j < femaleCharacters.length; j++) {
-    if (charactersNames[i] == femaleCharacters[j]) {
+    if (femaleCharacters[j].name == charactersNames[j]) {
       charactersNames.splice(i, 1);
     }
   }
@@ -277,5 +277,20 @@ console.log(charactersNames.length);
 console.log("\n");
 
 /* --EXTRA-- ESERCIZIO 10
-  Crea una funzionalità che selezioni un elemento casuale dall'array "starWarsCharacters" e ne stampi in console le proprietà in modo discorsivo (a tuo piacimento).
+  Crea una funzionalità che selezioni un elemento casuale dall'array
+   "starWarsCharacters" e ne stampi in console le proprietà in modo 
+   discorsivo (a tuo piacimento).
 */
+
+console.log("\n");
+console.log('******ESERCIZIO 10*****');
+console.log("\n");
+
+const indiceRandom=Math.floor(Math.random()*starWarsCharacters.length);
+
+console.log('Il personaggio si chiama ' + starWarsCharacters[indiceRandom].name + 
+            ' che pesa ' + starWarsCharacters[indiceRandom].mass +
+            ' ed alto ' + starWarsCharacters[indiceRandom].height);
+
+      
+console.log("\n");
