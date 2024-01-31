@@ -105,7 +105,7 @@ const starWarsCharacters = [
   Crea una variabile chiamata "charactersNames" e assegnale un array vuoto
 */
 
-console.log("\n");
+
 console.log('******ESERCIZIO 1*****');
 console.log("\n");
 
@@ -121,7 +121,6 @@ console.log("\n");
   Come risultato dovresti ottenere qualcosa di simile: ["Luke Skywalker", "C-3PO", "R2-D2", etc..]
 */
 
-console.log("\n");
 console.log('******ESERCIZIO 2*****');
 console.log("\n");
 for (let i = 0; i < starWarsCharacters.length; i++) {
@@ -178,22 +177,22 @@ console.log("\n");
 console.log('******ESERCIZIO 5*****');
 console.log("\n");
 
-for (let i = 0; i < starWarsCharacters.length; i++) {
-  switch (starWarsCharacters[i].eye_color) {
+for (let i = 0; i < starWarsCharacters.length; i++) {  //ciclo l'array 
+  switch (starWarsCharacters[i].eye_color) {            //switch con nelle parentesi--> l'array in posizione i.eye:color
     case 'blue':
-      eyeColor.blue.push(starWarsCharacters[i]);
+      eyeColor.blue.push(starWarsCharacters[i]);        //è come se ci fosse scritto="se eye_color='blue allora pushi qui"
       break;
     case 'yellow':
-      eyeColor.yellow.push(starWarsCharacters[i]);
+      eyeColor.yellow.push(starWarsCharacters[i]);      //stessa cosa
       break;
     case 'brown':
-      eyeColor.brown.push(starWarsCharacters[i]);
+      eyeColor.brown.push(starWarsCharacters[i]);       //stessa cosa
       break;
     case 'red':
-      eyeColor.red.push(starWarsCharacters[i]);
+      eyeColor.red.push(starWarsCharacters[i]);         //stessa cosa
       break;
     case 'blueGray':
-      eyeColor.blueGray.push(starWarsCharacters[i]);
+      eyeColor.blueGray.push(starWarsCharacters[i]);    //stessa cosa
       break;
   }
 }
@@ -269,7 +268,7 @@ console.log(charactersNames.length);
 for (let i = 0; i < charactersNames.length; i++) {
   for (let j = 0; j < femaleCharacters.length; j++) {
     if (femaleCharacters[j].name == charactersNames[j]) {
-      charactersNames.splice(i, 1);
+      charactersNames.splice(i, 2);     // sintassi di splice(indiceInizio, numeroDaEliminare, elemento1, elemento2, ...);)
     }
   }
 }
@@ -286,7 +285,7 @@ console.log("\n");
 console.log('******ESERCIZIO 10*****');
 console.log("\n");
 
-const indiceRandom=Math.floor(Math.random()*starWarsCharacters.length);
+const indiceRandom=Math.floor(Math.random()*starWarsCharacters.length);  //Math.random() restituisce un numero pseudo-casuale 
 
 console.log('Il personaggio si chiama ' + starWarsCharacters[indiceRandom].name + 
             ' che pesa ' + starWarsCharacters[indiceRandom].mass +
