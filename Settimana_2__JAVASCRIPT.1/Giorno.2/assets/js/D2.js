@@ -8,12 +8,16 @@ let numero1 = 26;
 let numero2 = 27;
 
 if(numero1>numero2){
+  console.log('Il più grande tra i due è ' + numero1);
   document.getElementById('max').innerHTML='Il numero più grande tra i due è ' + numero1;
 }else if(numero2>numero1){
+  console.log('Il più grande tra i due è ' + numero2);
   document.getElementById('max').innerHTML='Il numero più grande tra i due è ' + numero2;
 }else{
+  console.log(numero1 + ' e ' + numero2 + ' sono uguali');
   document.getElementById('max').innerHTML= numero1 + ' e' + numero2 + ' sono uguali';
 }
+
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console
@@ -130,21 +134,27 @@ let num2=3;
 let num3=14;
 
 if((num1>=num2)&&(num1>=num3)){
-    if(num2>=num3){
-      console.log(num1,num2,num3);
+    if(num2>=num3){ 
+      document.getElementById('sort').innerHTML= 'Dal più alto al più\' piccolo dei tre: ' + num1 + ' , ' + num2 + ' e ' + num3;             
+      console.log(num1,num2,num3);      //dopo aver assodato che *num1* sia il + grande, devo vedere chi è il secondo ovvero num2 oppure *num3* nell'else
     }else{
+      document.getElementById('sort').innerHTML= 'Dal più alto al più\' piccolo dei tre: ' + num1 + ' , ' + num3 + ' e ' + num2;
       console.log(num1,num3,num2);
     }
 }else if((num2>=num1)&&(num2>=num3)){
-      if(num3>=num1){
-        console.log(num2,num3,num1);
+      if(num3>=num1){   
+        document.getElementById('sort').innerHTML= 'Dal più alto al più\' piccolo dei tre: ' + num2 + ' , ' + num3 + ' e ' + num1;             
+        console.log(num2,num3,num1);//dopo aver assodato che *num2* sia il + grande, devo vedere chi è il secondo ovvero num3 oppure *num1* nell'else
       }else{
+        document.getElementById('sort').innerHTML= 'Dal più alto al più\' piccolo dei tre: ' + num2 + ' , ' + num1 + ' e ' + num3;
         console.log(num2,num1.num3);
       }
 }else if((num3>=num1)&&(num3>=num2)){
-      if (num1>=num2){
-        console.log(num3,num1,num2);
+      if (num1>=num2){               
+        document.getElementById('sort').innerHTML= 'Dal più alto al più\' piccolo dei tre: ' + num3 + ' , ' + num1 + ' e ' + num2;
+        console.log(num3,num1,num2); //dopo aver assodato che *num3* sia il + grande, devo vedere chi è il secondo ovvero num1 oppure *num1* nell'else
       }else{
+        document.getElementById('sort').innerHTML= 'Dal più alto al più\' piccolo dei tre: ' + num3 + ' , ' + num2 + ' e ' + num1;
         console.log(num3,num2,num1);
       }
 }
@@ -200,10 +210,13 @@ if(numero7%2==0){
 
 let val = 7
 if (val < 5) {
-    console.log("Meno di 5");
+  document.getElementById('circostanza').innerHTML= val + ' è meno di 5';  
+  console.log("Meno di 5");
   } else if (val < 10) {
+    document.getElementById('circostanza').innerHTML= val + ' è meno di 10';
     console.log("Meno di 10");
   } else {
+    document.getElementById('circostanza').innerHTML= val + ' è uguale a 10 o maggiore';
     console.log("Uguale a 10 o maggiore");
   }
 
@@ -223,6 +236,8 @@ const me = {
 
 me.city="Toronto";
 console.log(me.city);
+document.getElementById('me').innerHTML= 'La persona di nome ' + me.name + ' , e cognome ' + me.lastName + ' , con le seguenti skills: ' 
+                                        + me.skills[0] + ' , ' + me.skills[1] + ' , ' + me.skills[2] + ', nato a ' + me.city;
 
 
 /* ESERCIZIO 12
@@ -233,6 +248,7 @@ console.log(me.city);
 
 delete me.lastName;
 console.log(me.lastName);
+document.getElementById('me1').innerHTML= me.name + ' , ' + me.lastName + ' , ' + me.skills[0] + ' , ' + me.skills[1] + ' , ' + me.skills[2] + ' , ' + me.city;
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
@@ -240,8 +256,9 @@ console.log(me.lastName);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-delete me.skills[2];
+me.skills.pop();
 console.log(me.skills[2]);
+document.getElementById('push').innerHTML= me.name + ', ' + me.skills + ', ' + me.city;
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
