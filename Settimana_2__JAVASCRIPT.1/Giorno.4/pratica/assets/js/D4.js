@@ -52,8 +52,8 @@ console.log("\n");
 
 function crazyDiff(a){
     let diff=Math.abs(a-19);
-    if ((a)>19){
-        return diff*3;
+    if (a>19){
+        return Math.abs(diff)*3;
     }else{
         return Math.abs(diff);
     }
@@ -72,7 +72,7 @@ console.log("\n");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function boundary(n){
-    if((n>20)&&(n<=100)||(n===400)){
+    if((n>=20)&&(n<=100)||(n===400)){
         return true;
     }else{
         return false;
@@ -93,16 +93,15 @@ console.log("\n");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function epify(stringa){
-        let nuovaStringa = "EPICODE E' UNA SCUOLA";
-        if(nuovaStringa.indexOf()===0){
-            return nuovaStringa;
-        }else{
-            return stringa + nuovaStringa;
-        }
+    if (stringa.startsWith('EPICODE')) {
+        return stringa;
+    }else {
+        return 'EPICODE' + stringa;
+    }
 }
 
 console.log('*********ESERCIZIO 5***********');
-console.log('La funzione particolare boundary ci dà come risultato: ' + epify("EPICODE LA SCUOLA "));
+console.log(epify(" IL NATALE "));
 console.log("\n");
 console.log("\n");
 
@@ -154,10 +153,11 @@ console.log("\n");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 // function upperFirst(a){
+//     let nuovaStringa='';
 //     for(let i=0; i<a.length; i++){
-//         a.toLoweCase(i);
+//         nuovaStringa=a.toLoweCase();
 //     }
-//     a.toUpperCase(0);
+//     return nuovaStringa.toUpperCase();
 // }
 
 // console.log('*********ESERCIZIO 8***********');
@@ -181,6 +181,7 @@ console.log("\n");
 // console.log('La stringa fornita ora è '  +  upperFirst("TgtyYr"));
 // console.log("\n");
 // console.log("\n");
+
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
