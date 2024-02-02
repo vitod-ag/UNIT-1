@@ -1,1 +1,166 @@
 /* Your styles here */
+
+/* TIPOGRAFIA E INFO GENERALI */
+
+html{
+    background-color: rgb(255, 244, 244);
+}
+
+
+body{
+    margin: 0;
+}
+
+#main{
+    margin: 25px;
+}
+
+/* HEADER */
+
+header{
+    background-color: #222F3F;
+}
+
+header .logo img{
+    padding: 12.5px 12.5px 0 12.5px;
+}
+
+header nav .nav_classe{
+    background-color: #364759;
+}
+
+header nav .nav_classe .list{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    padding: 5px 5px 5px 12px;
+}
+
+header nav .nav_classe .list li{
+    display: inline;
+    color: white;
+    padding: 10px;
+}
+
+/* MAIN */
+
+/* section_1 */
+
+main #main .section_1{
+    background-color: #F56600;
+    text-align: center;
+}
+
+main #main .section_1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: white;
+    padding: 5.5px;
+}
+
+/* section_2 */
+
+main #main .section_2{
+    background-image: url('../images/bg-image.png');
+    background-size: 100%;
+    background-repeat: repeat;
+    height: 150px;
+    
+}
+
+main #main .section_2 h1,p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+main #main .section_2 h1{
+    padding-top: 40px;
+    margin-bottom: 5px;
+}
+
+main #main .section_2 p{
+    font-size: small;
+    font-weight: bold;
+    padding-top: 2px;
+    margin-top: 15px;
+}
+
+/* section_3 */
+
+main #main .section_3{
+    background-color: white;
+    height: 285px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 300px;
+    padding: 13px 13px 13px 22px;
+    
+}
+
+main #main .section_3 .description_text_section_3{
+    margin-bottom: 10px;
+}
+
+
+main #main .section_3 .description_text_section_3 p{
+    display: inline;
+    color: black;
+}
+
+main #main .section_3 .descrption_text_section_3 .text_2{
+    color: rgb(20, 82, 77);
+    padding-left: 7px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+main #main .section_3 .pictures{
+    display: inline-flex;
+}
+
+main #main .section_3 .pictures .picture_1 img{
+    width: 222px;
+    border-radius: 10px;
+    margin-right: 15px;
+    height: 265px;
+}
+
+main #main .section_3 .pictures .picture_2 img{
+    width: 222px;
+    margin-right: 15px;
+    border-radius: 10px;
+    height: 265px;
+}
+
+main #main .section_3 .pictures .picture_3 img{
+    width: 222px;
+    margin-right: 15px;
+    border-radius: 10px;
+    height: 265px;
+}
+
+main #main .section_3 .pictures .picture_4 img{
+    width: 222px;
+    border-radius: 10px;
+    height: 265px;
+}
+
+
+main #main .section_4 .description_text_section_4{
+    text-align: center;
+}
+
+
+
+main #main .section_4 .description_text_section_4 p{
+    display: inline;
+    color: black;
+}
+
+main #main .section_4 .descrption_text_section_4 .gaming{
+    color: rgb(20, 82, 77);
+    padding-left: 7px;
+    font-weight: bolder;
+    font-size: small;
+}
