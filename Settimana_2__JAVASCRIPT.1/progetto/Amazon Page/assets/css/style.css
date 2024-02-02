@@ -94,7 +94,7 @@ main #main .section_3{
     margin-top: 15px;
     margin-bottom: 15px;
     height: 300px;
-    padding: 13px 13px 13px 22px;
+    text-align: center;
     
 }
 
@@ -116,32 +116,32 @@ main #main .section_3 .descrption_text_section_3 .text_2{
 }
 
 main #main .section_3 .pictures{
-    display: inline-flex;
+    text-align: center;
 }
 
 main #main .section_3 .pictures .picture_1 img{
-    width: 222px;
+    width: 500px;
     border-radius: 10px;
     margin-right: 15px;
     height: 265px;
 }
 
 main #main .section_3 .pictures .picture_2 img{
-    width: 222px;
+    width: 500px;
     margin-right: 15px;
     border-radius: 10px;
     height: 265px;
 }
 
 main #main .section_3 .pictures .picture_3 img{
-    width: 222px;
+    width: 500px;
     margin-right: 15px;
     border-radius: 10px;
     height: 265px;
 }
 
 main #main .section_3 .pictures .picture_4 img{
-    width: 222px;
+    width: 500px;
     border-radius: 10px;
     height: 265px;
 }
