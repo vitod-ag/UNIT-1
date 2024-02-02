@@ -93,7 +93,7 @@ console.log("\n");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 function epify(stringa){
-    if (stringa.startsWith('EPICODE')) {
+    if (stringa.startsWith('EPICODE ')) {
         return stringa;
     }else {
         return 'EPICODE' + stringa;
