@@ -1,0 +1,186 @@
+
+/* INFO GENERALI */
+
+body{
+    margin: 0;
+    background-color: #E9EDEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    margin: 25px;
+}
+
+/* BLOCCO HEADER CON LOGO E LISTA NON ORDINATA IN ORRIZZONTALE */
+
+.logo {
+    background-color: #222F3F;
+}
+
+.logo img {
+    width: 8%;
+    padding: 8px 25px 8px 25px;
+}
+
+.list nav {
+    background-color: #364759;
+}
+
+.list nav ul{
+    margin: 0;
+    padding: 8px 25px 8px 25px;
+}
+
+.list nav li{
+    display: inline;
+    padding: 5px;
+    color: white;
+}
+
+/* BLOCCO ARANCIONE CON LINK */
+
+.blocco_arancione{
+    background-color: #F56600;
+    text-align: center;
+    padding: 5px;
+}
+
+.blocco_arancione a{
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    padding: 35px;
+}
+
+/* ARTICLE CON IL BACKGROUND  */
+
+.holiday{
+    background-image: url(../img/bg-image.png);
+    height: 140px;
+    width: 100%;
+    background-repeat: repeat;
+    background-size: 1300px;
+    background-position-x: center;
+    padding: 2em 0em;
+    margin: 2em 0em;
+}
+
+.holiday h2,p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.holiday h2 {
+    padding-top: 25px;
+    margin-bottom: 8px;
+}
+
+.holiday p {
+    margin-top: 18px;
+    padding-bottom: 20px;
+}
+
+/* DIV CON LE 4 FOTO */
+
+.pictures{
+    background-color: white;
+    text-align: center;
+    margin-top: 15px;
+    height: 400px;
+    margin-bottom: 15px;
+}
+
+.pictures p{
+    color: black;
+    text-align: start;
+    font-size: large;
+    padding: 15px 15px 15px 100px;
+    margin-bottom: 0;
+}
+
+.pictures p span{
+    color: rgb(0, 104, 82);
+    padding: 15px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.pictures .immagini{
+    height: 310px;
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.console img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.console p{
+    color: black;
+    text-align: center;
+    font-size: large;
+    padding: 15px 15px 15px 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 2px;
+}
+
+.console p span{
+    color: rgb(0, 104, 82);
+    padding: 15px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+/*  */
+
+.marshall img{
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.marshall p{
+    color: black;
+    text-align: center;
+    font-size: large;
+    padding: 15px 15px 15px 100px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 2px;
+}
+
+.marshall p span{
+    color: rgb(0, 104, 82);
+    padding: 15px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+/* FOOTER */
+
+.logo_1 {
+    background-color: #222F3F;
+    text-align: center;
+    height: 100px;
+}
+
+.logo_1 img {
+    width: 12%;
+    padding: 30px 25px 8px 25px;
+
+}
+
+.top {
+    background-color: #364759;
+    text-align: center;
+    padding: 15px;
+    
+}
+
+#button{
+    color: white;
+}
