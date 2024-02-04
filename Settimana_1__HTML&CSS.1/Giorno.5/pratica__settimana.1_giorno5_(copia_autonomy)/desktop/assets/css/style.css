@@ -1,0 +1,46 @@
+/* INFO GENERALI */
+
+body{
+    margin: 0;
+}
+
+
+.logo{
+    background-color: black;
+}
+
+.logo img{
+    width: 150px;
+    padding: 15px;
+}
+
+.partiamo{
+    text-align: center;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: inherit;
+    height: 190px;
+    padding: 9em 31em 10em 31em;
+}
+
+.partiamo h2{
+    color: #25a2c3;
+    font-family: 'Montserrat', sans-serif;  
+    line-height: 1.5;
+}
+
+.partiamo p{
+    font-family: 'Montserrat', sans-serif;  
+    line-height: 1.5;
+}
+
+.button a{
+    background-color: #f04c2f;
+    color: white;
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
