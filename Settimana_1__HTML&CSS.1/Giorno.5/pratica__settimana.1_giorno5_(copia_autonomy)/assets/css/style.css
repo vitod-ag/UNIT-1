@@ -1,0 +1,13 @@
+header{
+    margin: 0;
+}
+
+.logo{
+    background-color: black;
+    text-align: center;
+    margin: 0;
+}
+
+.logo img{
+    width: 10%;
+}
