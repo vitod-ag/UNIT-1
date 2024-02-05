@@ -13,9 +13,13 @@ REGOLE
 console.log('\n');
 console.log('*********ESERCIZIO 1*****************')
 const pets = ['dog', 'cat', 'hamster', 'redfish']
-for (let i = 0; i < pets.length; i++) {
-  console.log(pets[i]);
+function stampaArray(pets){
+  for (let i = 0; i < pets.length; i++) {
+    console.log(pets[i]);
+  }
 }
+stampaArray(pets);
+console.log(pets);
 console.log('\n');
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
@@ -25,6 +29,7 @@ console.log('*********ESERCIZIO 2*****************')
 pets.sort();
 console.log('L\'array pets è così ordinato alfabeticamente: ' + pets);
 console.log('\n');
+
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
@@ -160,7 +165,7 @@ while (i <= 32) {
     es. [f, b, e] --> [6, 2, 5]
 */
 console.log('\n');
-console.log('*********ESERCIZIO 9*****************')
+console.log('*********ESERCIZIO 10*****************')
 console.log('\n');
 const charactersArray = ['g', 'n', 'u', 'z', 'd']
 
