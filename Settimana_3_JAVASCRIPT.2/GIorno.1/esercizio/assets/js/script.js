@@ -78,7 +78,8 @@ const addParagraph = function () {
 */
 
 const hideFirstUl = function () { 
-    
+    const primaLista = document.getElementById('firstList');
+    primaLista.style.display = 'none';
 }
 
 /* ESERCIZIO 8 
@@ -91,7 +92,8 @@ const paintItGreen = function () { }
  Scrivi una funzione che rimuova l'ultima lettera dall'h1 ogni volta che l'utente lo clicca
 */
 
-const makeItClickable = function () { }
+const makeItClickable = function () { 
+}
 
 /* ESERCIZIO 10
  Crea una funzione che, al click sul footer, riveli l'URL del link interno come contenuto di un alert()
