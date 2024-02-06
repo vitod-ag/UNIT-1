@@ -312,6 +312,15 @@ const movies = [
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
+const elenco = document.getElementById('elenco');
+
+movies.forEach(element => {
+  let option = document.createElement('option');
+  option.setAttribute('value',element.imdbID);
+  option.innerText = element.Title;
+  elenco.appendChild(option);
+})
+
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
 */
