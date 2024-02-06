@@ -139,12 +139,35 @@ revealFooterLink();
 //  La tabella avrà 5 elementi e questa struttura: immagine, nome prodotto, quantità, prezzo
 // */
 
-// const generateTable = function () { 
+const generateTable = function () { 
+        const tableContainer = document.getElementById('tableArea'); // RICERCA E MESSA IN VARIABILE
+        const tabella = document.createElement('table');             // CREO ELEMENTO IN QUESTA VAR
 
+        // CREO RIGA
+        const intestazione = document.createElement('tr');
+        
+        // CREO HEADING 
+        const thId = document.createElement('th');
+        thId.innerText = 'ID';
+        const thImmagine = document.createElement('th');
+        thImmagine.innerText = 'Immagine';
+        const thNome = document.createElement('th');
+        thNome.innerText = 'Nome Prodotto';
+        const thQuantita = document.createElement('th');
+        thQuantita.innerText = 'Quantita';
+        const thPrezzo = document.createElement('th');
+        thPrezzo.innerText = 'Prezzo';
 
-// }
+        // RIEMPIO IL CONTENUTO DELLE RIGHE
+        intestazione.appendChild(thId);   // FACCIO APPENCHILD POICHE LE RIGA HEADING STA GIA' CREATA E POPOLATA
+        intestazione.appendChild(thImmagine);
+        intestazione.appendChild(thNome);
+        intestazione.appendChild(thQuantita);
+        intestazione.appendChild(thPrezzo); 
 
-// generateTable();
+}
+
+generateTable();
 
 // /* ESERCIZIO 12
 //  Crea una funzione che aggiunga una riga alla tabella precedentemente creata e fornisca i dati necessari come parametri
