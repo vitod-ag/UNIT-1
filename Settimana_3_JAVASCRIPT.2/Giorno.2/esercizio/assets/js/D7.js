@@ -262,43 +262,59 @@ const movies = [
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
 
-// console.log("\n");
-// console.log('*******ESERCIZIO 9***********');
+console.log("\n");
+console.log('*******ESERCIZIO 9***********');
 
-// function olderThan(movies){
-//     let movieOlder;
-//     movies.forEach(numero => {
-//       somma += numero;
-//     });
-//     return somma;
-// }
+function trovaFilmPiuVecchio(films) {
+  // Inizializziamo una variabile per memorizzare il film più vecchio
+  var filmPiuVecchio = null;
 
-// let arrayUsato = [1,2,4,5,8];
-// let risultato = somma(arrayUsato);
-// console.log(risultato);
+  // Iteriamo su ciascun film nell'array utilizzando forEach
+  films.forEach(function(film) {
+    // Controlliamo se filmPiuVecchio è ancora null o se il film corrente è più vecchio di quello memorizzato
+    if (filmPiuVecchio === null || film.annoPubblicazione < filmPiuVecchio.annoPubblicazione) {
+      // Se è così, assegniamo il film corrente a filmPiuVecchio
+      filmPiuVecchio = film;
+    }
+  });
+  return filmPiuVecchio;
+}
+
+let olderThan = trovaFilmPiuVecchio(movies);
+console.log(olderThan);
+
 
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
 
-// console.log("\n");
-// console.log('*******ESERCIZIO 10***********');
+console.log("\n");
+console.log('*******ESERCIZIO 10***********');
 
-// const numeroFilm = (quantiFilm) => {
-//   quantiFilm = [];
-//   for ( let i=0; i<movies.length; i++ ){
-//       quantiFilm += movies.Title[i];
-//   }
-//   return quantiFilm;
-// }
+function quantiFilm(film){
+  return film.length;
+}
 
-// let quantiFilm = numeroFilm(movies.Title);
-// console.log(numeroFilm);
+let numeroFilm = quantiFilm(movies);
+console.log(numeroFilm);
+
 
 
 /* ESERCIZIO 11 (map)
   Scrivi una funzione per creare un array con solamente i titoli dei film contenuti nell'array fornito.
 */
+
+// console.log("\n");
+// console.log('*******ESERCIZIO 11***********');
+
+// const arrayTitoli = (arrayFilm)  => {
+//   const arrayTitle = arrayFilm.map(function(film))
+  
+//   return arrayTitle;
+// }
+
+// let arrayTitle = arrayTitoli(movies);
+// console.log(arrayTitle);
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
@@ -308,19 +324,44 @@ const movies = [
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
 
+
+
+
+
+
+
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
 
-const elenco = document.getElementById('elenco');
+// console.log("\n");
+// console.log('*******ESERCIZIO 14***********');
 
-movies.forEach(element => {
-  let option = document.createElement('option');
-  option.setAttribute('value',element.imdbID);
-  option.innerText = element.Title;
-  elenco.appendChild(option);
-})
+// function cercaFilm(id) {
+//   return movies.find(elemnt => elementiPari.imdbID===id)
+// }
 
-/* ESERCIZIO 15 (findIndex)
-  Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
-*/
+// const elenco = document.getElementById('elenco');
+
+// movies.forEach(element => {
+// 	let option = document.createElement('option');
+// 	option.setAttribute('value', element.imdbID);
+// 	option.innerText = element.Title;
+// 	elenco.appendChild(option);
+// });
+
+// document.getElementById('scegli').addEventListener('click', function() {
+// 	let imdbID = elenco.value;
+// 	const filmScelto = movies.find((element) => {
+// 		return element.imdbID === imdbID;
+// 	});
+// 	console.log(filmScelto);
+// 	document.getElementById('titolo').innerText = filmScelto.Title;
+// 	document.getElementById('anno').innerText = `Anno di produzione: ${filmScelto.Year}`;
+// 	document.getElementById('locandina').innerHTML = `<img src="${filmScelto.Poster}" alt="locandina ${filmScelto.Title}" />`;
+// 	document.getElementById('trailer').innerHTML = filmScelto.Trailer;
+// });
+
+// /* ESERCIZIO 15 (findIndex)
+//   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.
+// */
