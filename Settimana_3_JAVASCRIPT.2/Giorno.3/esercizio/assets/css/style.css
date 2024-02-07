@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(135, 66, 200);
+    background-color: rgb(125, 27, 125);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -31,5 +31,17 @@ body {
     border-radius: 5px;
     padding: 9px;
     width: 130px;
+}
+
+ul{
+    padding: 9px;
+}
+
+li {
+    background-color: rgb(125, 178, 180);
+    color: black;
+    padding: 9px;
+    list-style-type: none;
+    margin: 3.5px;
 }
 
