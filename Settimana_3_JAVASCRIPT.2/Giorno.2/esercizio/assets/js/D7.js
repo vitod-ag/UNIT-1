@@ -342,7 +342,7 @@ function cercaFilm(id) {
 }
 
 const filmTrovato = cercaFilm('tt4154796');
-console.log('Film trovato: ', filmTrovato);
+console.log('Film trovato: ', filmTrovato)
 
 
 //**********************NETFLIX***************************/
@@ -364,7 +364,6 @@ console.log('Film trovato: ', filmTrovato);
 // 	document.getElementById('titolo').innerText = filmScelto.Title;
 // 	document.getElementById('anno').innerText = `Anno di produzione: ${filmScelto.Year}`;
 // 	document.getElementById('locandina').innerHTML = `<img src="${filmScelto.Poster}" alt="locandina ${filmScelto.Title}" />`;
-// 	document.getElementById('trailer').innerHTML = filmScelto.Trailer;
 // });
 
 // /* ESERCIZIO 15 (findIndex)
