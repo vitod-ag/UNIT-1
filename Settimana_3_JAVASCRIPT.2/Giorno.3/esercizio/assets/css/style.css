@@ -1,21 +1,35 @@
 body {
     background-color: rgb(135, 66, 200);
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .riquadro{
     background-color: white;
-    width: 300px;
+    width: 700px;
     height: 200px;
     border-radius: 5px;
     position: absolute;
-    top: 40%; 
-    left: 40%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .riquadro2{
-    padding: 7px;
+    padding: 15px;
 }
 
 #task{
-    
+    width: 470px;
+    padding: 9px;
+    margin-right: 25px;
 }
+
+#button {
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 9px;
+    width: 130px;
+}
+
