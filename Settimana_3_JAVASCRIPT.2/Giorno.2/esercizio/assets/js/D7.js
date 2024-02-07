@@ -331,17 +331,22 @@ console.log(numeroFilm);
 
 
 /* ESERCIZIO 14 (find)
-  Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
-*/
+  Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).*/
+          
 
-// console.log("\n");
-// console.log('*******ESERCIZIO 14***********');
+console.log("\n");
+console.log('*******ESERCIZIO 14***********');
 
-// function cercaFilm(id) {
-//   return movies.find(elemnt => elementiPari.imdbID===id)
-// }
+function cercaFilm(id) {
+  return movies.find(element => element.imdbID===id)    // cerco il film tramite ID grazie al find()
+}
 
-// const elenco = document.getElementById('elenco');
+const filmTrovato = cercaFilm('tt4154796');
+console.log('Film trovato: ', filmTrovato);
+
+
+//**********************NETFLIX***************************/
+//const elenco = document.getElementById('elenco');
 
 // movies.forEach(element => {
 // 	let option = document.createElement('option');
