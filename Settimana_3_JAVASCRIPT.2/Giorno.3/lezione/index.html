@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lezione UNIT 1 settimana 3 giorno 3</title>
 </head>
+
 <body>
-    
+
     <h1>I FORM</h1>
     <hr />
-    
+
+    <form id="form" method="post">
+        <label for="name"> NOME </label>&nbsp;
+        <input type="text" id="nome" name="nome" />&nbsp;
+        <label for="cognome"> CONOME </label>&nbsp;
+        <input type="text" id="cognome" name="cognome" required/>&nbsp;
+        <br /> <br />
+        <label for="email"> EMAIL </label>&nbsp;
+        <input type="email" id="email" name="email" required/>&nbsp;
+        <label for="password"> PASSWORD </label>&nbsp;
+        <input type="password" id="password" name="password" minlength="8" maxlength="20" required/>&nbsp;
+        <br /> <br />
+        <label for="eta"> ETA </label>&nbsp;
+        <input type="number" id="eta" name="eta" />&nbsp;
+        <label for="telefono"> TELEFONO </label>&nbsp;
+        <input type="tel" id="telefono" name="telefono"  required/>&nbsp;
+        <br /> <br />
+        <button type="submit" id="invia">INVIA</button>&nbsp;
+        <button type="reset" id="cancella">CANCELLA</button>
+
+    </form>
 
 
 
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>
