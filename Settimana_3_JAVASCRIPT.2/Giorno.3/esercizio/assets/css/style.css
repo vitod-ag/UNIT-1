@@ -1,47 +1,37 @@
-body {
-    background-color: rgb(125, 27, 125);
-    height: 100%;
+html, body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-family: 'Roboto', sans-serif;
 }
 
-.riquadro{
-    background-color: white;
-    width: 700px;
-    height: 200px;
-    border-radius: 5px;
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
+header {
+    text-align: center;
+    color: antiquewhite;
+    background-color: darkslategray;
+    height: 50px;
+    padding: 30px;
 }
 
-.riquadro2{
-    padding: 15px;
+.container {
+    text-align: center;
 }
 
-#task{
-    width: 470px;
-    padding: 9px;
-    margin-right: 25px;
+.container input {
+    font-size: x-large;
+    margin-top: 20px;
 }
 
-#button {
-    background-color: aqua;
-    border-radius: 5px;
-    padding: 9px;
-    width: 130px;
+.container button {
+    height: 30px;
+    vertical-align: text-top;
+    background-color: green;
+    color: white;
+    font-weight: bold;
 }
 
-ul{
-    padding: 9px;
-}
-
-li {
-    background-color: rgb(125, 178, 180);
-    color: black;
-    padding: 9px;
+#lista {
     list-style-type: none;
-    margin: 3.5px;
 }
-
