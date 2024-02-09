@@ -8,15 +8,16 @@
 console.log("\n");
 console.log('*******ESERCIZIO 1***********');
 
-function concateno(stringa1, stringa2) {
-  let primiDueCaratteri = stringa1.substring(0, 2);
-  let ultimiTreCaratteri = stringa2.slice(-3);
-  let stringaConcatenata = primiDueCaratteri.concat(ultimiTreCaratteri);
-  stringaConcatenata = stringaConcatenata.toUpperCase();
-  console.log(stringaConcatenata);
+
+const concatena = (stringa1,stringa2) => {
+    let nome1Tagliato=stringa1.slice(0,2);
+    let nome2Tagliato=stringa2.slice(stringa2.length,-3);
+    let stringaConcatenata = nome1Tagliato.concat(nome2Tagliato);
+    return stringaConcatenata.toUpperCase();
 }
 
-concateno("ciao", "mondo");
+let stringa4 = concatena('Marco','Gastristico');
+console.log(stringa4);
 
 /* ESERCIZIO 2 (for)
   Scrivi una funzione che torni un array di 10 elementi;
