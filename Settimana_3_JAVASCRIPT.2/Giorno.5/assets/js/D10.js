@@ -615,9 +615,29 @@ console.log("\n");
   Scrivi una funzione per selezionare l'elemento dotato di id "container" all'interno della pagina.
 */
 
+console.log('************ESERCIZIO 20********************');
+
+const div = () => {
+  const container = document.getElementById('container');
+  console.log(container.innerText);
+}
+div();
+console.log('div');
+console.log("\n");
+
+
 /* ESERCIZIO 21
   Scrivi una funzione per selezionare ogni tag <td> all'interno della pagina.
 */
+
+console.log('************ESERCIZIO 21********************');
+
+const selectTd = (tag) => {
+  const tableData = document.getElementsByTagName('tag');
+  return tableData;
+}
+console.log(selectTd("td"));
+console.log("\n");
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
