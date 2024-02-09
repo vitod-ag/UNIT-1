@@ -597,14 +597,15 @@ console.log("\n");
   Scrivi una funzione chiamata "removeIndex" che riceve un numero come parametro e ritorna l'array "movies" fornito privo dell'elemento nella posizione ricevuta come parametro.
 */
 
-console.log('************ESERCIZIO 18********************');
+console.log('************ESERCIZIO 19********************');
 
-const removeIndex = (numero) => {
+const removeIndex = (num) => {
+  const copia = [...movies];
+  copia.splice(num, 1);
+  return copia;
+};
 
-
-}
-
-console.log(searchAndDivide("aven"));
+console.log(removeIndex(5));
 console.log("\n");
 
 
