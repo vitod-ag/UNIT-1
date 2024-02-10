@@ -559,7 +559,7 @@ console.log('************ESERCIZIO 17********************');
 
 const searchByTitle = (stringa) => {
   const trovato = movies.filter((film) =>
-      film.Title.toLowerCase().includes(stringa.toLowerCase())
+    film.Title.toLowerCase().includes(stringa.toLowerCase())
   );
   return trovato;
 };
@@ -579,14 +579,14 @@ const searchAndDivide = (stringa) => {
     match: [],
     unmatch: []
   };
-   
+
   for (let i = 0; i < movies.length; i++) {
     if (movies[i].Title.toLowerCase().includes(stringa.toLowerCase())) {
       oggetto.match.push(movies[i]);
-  } else {
+    } else {
       oggetto.unmatch.push(movies[i]);
+    }
   }
-}
   return oggetto;
 }
 
@@ -647,10 +647,10 @@ console.log("\n");
 console.log('************ESERCIZIO 22********************');
 
 const stampaContenutoTag = () => {
-      const tableData = document.getElementsByTagName('td');  // seleziono tutti gli elementi <td> presenti nella pagina HTML e li assegno alla variabile tableData
-      for (let i=0; i<tableData.length; i++) {
-          console.log(tableData[i].innerText);
-      }
+  const tableData = document.getElementsByTagName('td');  // seleziono tutti gli elementi <td> presenti nella pagina HTML e li assegno alla variabile tableData
+  for (let i = 0; i < tableData.length; i++) {
+    console.log(tableData[i].innerText);
+  }
 }
 
 stampaContenutoTag();
@@ -665,10 +665,10 @@ console.log("\n");
 console.log('************ESERCIZIO 23********************');
 
 const aggiungiBackground = () => {
-      const coloreAlLink = document.querySelectorAll('a');      // uso query Selector All che mi selezionerà tutti gli elementi <a> presenti nella pagina
-      coloreAlLink.forEach(coloreAlLink => {                    // uso forEach così da dare ad ogni link il background
-            coloreAlLink.style.backgroundColor = 'red';     
-      });
+  const coloreAlLink = document.querySelectorAll('a');      // uso query Selector All che mi selezionerà tutti gli elementi <a> presenti nella pagina
+  coloreAlLink.forEach(coloreAlLink => {                    // uso forEach così da dare ad ogni link il background
+    coloreAlLink.style.backgroundColor = 'red';
+  });
 }
 
 aggiungiBackground();
@@ -681,9 +681,9 @@ console.log("\n");
 console.log('************ESERCIZIO 24********************');
 
 const aggiungiElementoAllaLista = () => {
-      let newElementList = document.createElement('li');
-      const listaNonOrdinata = document.getElementById('myList');
-      listaNonOrdinata.appendChild(newElementList);
+  let newElementList = document.createElement('li');
+  const listaNonOrdinata = document.getElementById('myList');
+  listaNonOrdinata.appendChild(newElementList);
 }
 
 aggiungiElementoAllaLista();
@@ -696,8 +696,8 @@ console.log("\n");
 console.log('************ESERCIZIO 25********************');
 
 const svuotaLista = () => {
-      const listaNonOrdinata = document.getElementById('myList');
-      listaNonOrdinata.innerHTML = '';    // usiamo innerHTML su una stringa vuota, tutti gli elementi figlio dell'elemento verranno rimossi.
+  const listaNonOrdinata = document.getElementById('myList');
+  listaNonOrdinata.innerHTML = '';    // usiamo innerHTML su una stringa vuota, tutti gli elementi figlio dell'elemento verranno rimossi.
 }
 
 svuotaLista();
@@ -712,11 +712,11 @@ console.log("\n");
 console.log('************ESERCIZIO 26********************');
 
 const aggiungiClasse = () => {
-      const tagTr = document.getElementsByTagName('tr');
-      for (let i=0; i<tagTr.length; i++){                       //mi serve il for poichè devo aggiungere la classe ad ogni tag <tr>
-        tagTr[i].classList.add('test');
-      }
-      
+  const tagTr = document.getElementsByTagName('tr');
+  for (let i = 0; i < tagTr.length; i++) {                       //mi serve il for poichè devo aggiungere la classe ad ogni tag <tr>
+    tagTr[i].classList.add('test');
+  }
+
 }
 
 aggiungiClasse();
@@ -737,18 +737,21 @@ console.log("\n");
 
 */
 
-const halfTree = (numero) => {
-    // prima mossa: vedo se il numero che mi ha inserito è positivo
-    if ( numero <= 0 ){
-      return 'L\'albero è vuoto';
-    }
-    let albero = '';   // mi creo una stringa e non un oggetto poiche' più semplice e modificabile
+console.log('************ESERCIZIO 27********************');
+console.log("\n");
 
-    
-    for (let i = 0; i < numero; i++) {
-      albero += '*'.repeat(i + 1) + '\n'; // il repeat mi serve per non fare due cicli annidati, mentre il \n mi fa andare a capo ad ogni asterisco
+const halfTree = (numero) => {
+  // prima mossa: vedo se il numero che mi ha inserito è positivo
+  if (numero <= 0) {
+    return 'L\'albero è vuoto';
   }
-  
+  let albero = '';   // mi creo una stringa e non un oggetto poiche' più semplice e modificabile
+
+
+  for (let i = 0; i < numero; i++) {
+    albero += '*'.repeat(i + 1) + '\n'; // il repeat mi serve per non fare due cicli annidati, mentre il \n mi fa andare a capo ad ogni asterisco
+  }
+
   return albero;
 }
 
@@ -771,9 +774,50 @@ console.log("\n");
 
 */
 
+console.log('************ESERCIZIO 28********************');
+console.log("\n");
+
+const tree = (numero) => {
+  // Verifica se il numero è minore o uguale a 0
+  if (numero <= 0) {
+    return 'L\'albero è vuoto';
+  }
+
+  // Costruisci l'albero di asterischi
+  for (let i = 1; i <= numero; i++) {
+    const spazi = " ".repeat(numero - i);                //metto gli spazi tante vole quante sono (numero-i)--> es. numero=3 quindi 3 righe di albero, al primo giro sono 2 spazi vuoti, al secondo uno e al terzo zero
+    let asterischi = "*".repeat(2 * (i - 1) + 1);        //metto gli asterischi grazie a  repeat(2*i-1)---> es numero=3 quindi al primo giro è 2*(1-1)+1 ovvero 1 e via via gli altri
+    console.log(spazi + asterischi);
+  }
+};
+
+let alberoConSpazi = tree(2);
+console.log(alberoConSpazi);
+console.log("\n");
+
 /* ESERCIZIO 29
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
+
+console.log('************ESERCIZIO 29********************');
+
+const isItPrime = (numero) => {
+  // controllo prima se il numero è maggiore di uno, altrimenti è falso che sia primo
+  if (numero <= 1) {
+    return false;
+  }  
+  for (let i = 0; i < numero; i++) {  // il for mi serve poiche devo trovare due divisori e non solo uno, fino al numero inserito
+    if (numero % i === 0) {
+      return false;     // ritorna falso perchè al massimo ne ha trovato solo uno e non due
+    }
+  }
+  return true;        // ciclo finito, ne ha trovati due
+}
+
+console.log(isItPrime(67));
+console.log("\n");
+
+
 
 
 
