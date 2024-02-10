@@ -725,7 +725,8 @@ console.log("\n");
 // [EXTRA] JS Avanzato
 
 /* ESERCIZIO 27
-  Crea una funzione chiamata "halfTree" che riceve un numero come parametro e costruisce un mezzo albero di "*" (asterischi) dell'altezza fornita.
+  Crea una funzione chiamata "halfTree" che riceve un numero come parametro
+   e costruisce un mezzo albero di "*" (asterischi) dell'altezza fornita.
 
   Esempio:
   halfTree(3)
@@ -736,8 +737,30 @@ console.log("\n");
 
 */
 
+const halfTree = (numero) => {
+    // prima mossa: vedo se il numero che mi ha inserito è positivo
+    if ( numero <= 0 ){
+      return 'L\'albero è vuoto';
+    }
+    let albero = '';   // mi creo una stringa e non un oggetto poiche' più semplice e modificabile
+
+    
+    for (let i = 0; i < numero; i++) {
+      albero += '*'.repeat(i + 1) + '\n'; // il repeat mi serve per non fare due cicli annidati, mentre il \n mi fa andare a capo ad ogni asterisco
+  }
+  
+  return albero;
+}
+
+let alberoSenzaSpazi = halfTree(2);
+console.log(alberoSenzaSpazi);
+console.log("\n");
+
+
+
 /* ESERCIZIO 28
-  Crea una funzione chiamata "tree" che riceve un numero come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
+  Crea una funzione chiamata "tree" che riceve un numero
+   come parametro e costruisce un albero di "*" (asterischi) dell'altezza fornita.
 
   Esempio:
   tree(3)
