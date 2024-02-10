@@ -457,12 +457,12 @@ console.log('************ESERCIZIO 12********************');
 
 const newestMovie = () => {
   let recently = 1900;                              // anno x che significa "a pertire da.."
-  let filmInQuestione;                              //film esaminato e poi man mano salvato
+  let filmInQuestione;                              // film esaminato e poi man mano salvato
   for (let i = 0; i < movies.length; i++) {
     let annoConvertito = parseInt(movies[i].Year);
     if (annoConvertito > recently) {
       recently = annoConvertito;
-      filmInQuestione = movies[i];
+      filmInQuestione = movies[i].Title;
     }
   }
   return filmInQuestione;
@@ -617,13 +617,13 @@ console.log("\n");
 
 console.log('************ESERCIZIO 20********************');
 
-const div = () => {
-  const container = document.getElementById('container');
-  console.log(container.innerText);
+const selezionoElementoId = () => {
+  const container = document.getElementById('container');   // metto l'id container in una variabile
+  console.log(container.innerText);                         // restituisco il testo contenuto all'interno dell'elemento, escludendo il markup HTML.
 }
-div();
-console.log('div');
+selezionoElementoId();
 console.log("\n");
+
 
 
 /* ESERCIZIO 21
@@ -632,32 +632,95 @@ console.log("\n");
 
 console.log('************ESERCIZIO 21********************');
 
-const selectTd = (tag) => {
-  const tableData = document.getElementsByTagName('tag');
-  return tableData;
+const selezionaTagTd = (tag) => {
+  const tableData = document.getElementsByTagName(tag);  // selezionare dinamicamente gli elementi in base al tag specificato
+  return tableData;                                      // perché vogliamo che la funzione restituisca i risultati della selezione degli elementi HTML
 }
-console.log(selectTd("td"));
+console.log(selezionaTagTd("td"));
 console.log("\n");
+
 
 /* ESERCIZIO 22
   Scrivi una funzione che, tramite un ciclo, stampa in console il testo contenuto in ogni tag <td> all'interno della pagina.
 */
 
+console.log('************ESERCIZIO 22********************');
+
+const stampaContenutoTag = () => {
+      const tableData = document.getElementsByTagName('td');  // seleziono tutti gli elementi <td> presenti nella pagina HTML e li assegno alla variabile tableData
+      for (let i=0; i<tableData.length; i++) {
+          console.log(tableData[i].innerText);
+      }
+}
+
+stampaContenutoTag();
+console.log("\n");
+
+
+
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
+
+console.log('************ESERCIZIO 23********************');
+
+const aggiungiBackground = () => {
+      const coloreAlLink = document.querySelectorAll('a');      // uso query Selector All che mi selezionerà tutti gli elementi <a> presenti nella pagina
+      coloreAlLink.forEach(coloreAlLink => {                    // uso forEach così da dare ad ogni link il background
+            coloreAlLink.style.backgroundColor = 'red';     
+      });
+}
+
+aggiungiBackground();
+console.log("\n");
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
 */
 
+console.log('************ESERCIZIO 24********************');
+
+const aggiungiElementoAllaLista = () => {
+      let newElementList = document.createElement('li');
+      const listaNonOrdinata = document.getElementById('myList');
+      listaNonOrdinata.appendChild(newElementList);
+}
+
+aggiungiElementoAllaLista();
+console.log("\n");
+
 /* ESERCIZIO 25
   Scrivi una funzione per svuotare la lista non ordinata con id "myList".
 */
 
+console.log('************ESERCIZIO 25********************');
+
+const svuotaLista = () => {
+      const listaNonOrdinata = document.getElementById('myList');
+      listaNonOrdinata.innerHTML = '';    // usiamo innerHTML su una stringa vuota, tutti gli elementi figlio dell'elemento verranno rimossi.
+}
+
+svuotaLista();
+console.log("\n");
+
+
+
 /* ESERCIZIO 26
   Scrivi una funzione per aggiungere ad ogni tag <tr> la classe CSS "test"
 */
+
+console.log('************ESERCIZIO 26********************');
+
+const aggiungiClasse = () => {
+      const tagTr = document.getElementsByTagName('tr');
+      for (let i=0; i<tagTr.length; i++){                       //mi serve il for poichè devo aggiungere la classe ad ogni tag <tr>
+        tagTr[i].classList.add('test');
+      }
+      
+}
+
+aggiungiClasse();
+console.log("\n");
 
 // [EXTRA] JS Avanzato
 
@@ -689,5 +752,5 @@ console.log("\n");
   Crea una funzione chiamata "isItPrime" che riceve un numero come parametro e ritorna true se il numero fornito è un numero primo.
 */
 
-/* Questo array viene usato per gli esercizi. Non modificarlo. */
+
 
