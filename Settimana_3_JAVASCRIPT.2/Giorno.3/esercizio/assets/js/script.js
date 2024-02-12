@@ -1,38 +1,43 @@
-const task = document.getElementById('task');
-const btnAggiungi = document.getElementById('inserisci');
+// mi porto nello script gli id HTML
+const task = document.getElementById('taskList');
+const btnAdd = document.getElementById('inserisci');
 const lista = document.getElementById('lista');
-// mi sono portato tutti gli elementi id dell'HTML 
 
+// scrivermi da qualche parte il valore degli input e in questo caso un array dove memorizzarlo
 let singleTask;
 let tasks = [];
-// variabili globali che userò nel proseguo
 
-function init() {
-    if (localStorage.getItem('tasks')){  // SE LA MEMORIA HA UN TASK
-        tasks = (localStorage.getItem('tasks').split(','));
-        console.log(tasks);
-        scriviLista();   // PRIMA FUNZIONE
-    }
-}
-
-btnAggiungi.addEventListener('click', function(e){
-    e.preventDefault();  // a campo vuoto blocca altre funzioni
-    if (task.value == '') {
-        alert('Inserire un task');
-        return;
-    }else {
-        aggiungi();     // SECONDA FUNZIONE
-        scriviLista();      // TERZA FUNZIONE
-        cancellaForm();     // QUARTA FUNZIONE
-    }
-})
-
-// iniziamo a scrivere le funzioni
+// inizio con un la cosa che mi faccia partire il tutto ovvero un click
+btnAdd.addEventListener('click', function(e){
+    e.preventDefault();     // resetto ad ogni inserimento
+    // CONTROLLO SE L'UTENTE HA INSERITO QUALCOSA
+    if (task.value === ''){
+        alert('Inserire un task!');
+        return;  
+      }
+    aggiungi();             /* pusho il nuovo task all'array */
+    scriviLista();          /* dopo aver pushato l'elemento, scrivo l'elemento nella lista*/
+    cancellaForm();         /* cancello */
+}) 
 
 const aggiungi = () => {
-    singleTask = task.value;
+    singleTask = task.value;   
     tasks.push(singleTask);
     console.log(tasks);
-    localStorage.setItem('tasks', tasks);
 }
 
+const scriviLista = () => {    // forEach() per iterare su tutti gli elementi nell'array tasks e mi creo un <li> che contiene il cestino 
+    lista.innerHTML = ''; // LA SVUOTO PRIMA DI INIZIARE QUALSIASI COSA
+    tasks.forEach((element, index) => {
+        lista.innerHTML += `<li> ${element}&nbsp;<button type='button' onclick='elimina(${index});'>🗑️</li>`;
+    })
+}
+
+const cancellaForm = () => {
+    task.value = '';
+}
+
+const elimina = (index) => {
+    tasks.splice(index,1);               //lo splice(da quale indice devo partire a eliminare, quanti ne devo eliminare)
+    scriviLista();
+}
